@@ -37,7 +37,7 @@ doAnalysis <- function(){
 	cut <- subset(merged, select=-c(Subject, Activity, Dataset))
   avs <- aggregate(cut, by = list(activity=merged$Activity, subject=merged$Subject), mean)
   
-  write.csv(avs, file='output.csv', row.names=FALSE)
+  write.table(avs, file='output.table', row.name=FALSE)
 }
 
 
