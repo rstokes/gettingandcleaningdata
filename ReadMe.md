@@ -1,4 +1,4 @@
-## 1
+## Steps
 `1` Merges the training and the test sets to create one data set.
 * Load the data files
 * Join activity and subject for test and train data sets. 
